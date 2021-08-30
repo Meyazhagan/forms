@@ -5,6 +5,7 @@ createTable();
 document.forms[0].onsubmit = () => {
   updateTableLS();
   updateTable();
+  document.querySelector(".popup").classList.toggle("inactive");
   return false;
 };
 
@@ -113,7 +114,7 @@ function createForm() {
     </div>
   </form>
 </div>
-<button class="close" onclick="showAddForm()">X</button>`;
+<button class="close" onclick="showAddForm()">&times;</button>`;
 
   print_country("country");
 }
