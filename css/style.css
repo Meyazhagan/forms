@@ -99,15 +99,15 @@ td:last-child {
 }
 
 tbody tr:last-child {
-  animation: pop 0.5s;
+  animation: pop 1.2s;
 }
 
 @keyframes pop {
   from {
-    opacity: 0;
+    transform: scaleY(0);
   }
   to {
-    opacity: 1;
+    transform: scaleY(1);
   }
 }
 table {
